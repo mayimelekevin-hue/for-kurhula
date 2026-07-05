@@ -147,19 +147,26 @@ nextReason.onclick = function () {
 const noBtn = document.getElementById("noBtn");
 const yesBtn = document.getElementById("yesBtn");
 
-noBtn.addEventListener("mouseover", () => {
+function moveNoButton() {
 
-    const x = Math.random() * 250 - 125;
-    const y = Math.random() * 250 - 125;
+    const x = Math.random() * 220 - 110;
+    const y = Math.random() * 220 - 110;
 
     noBtn.style.transform = `translate(${x}px, ${y}px)`;
+}
 
+// Desktop
+noBtn.addEventListener("mouseover", moveNoButton);
+
+// Mobile
+noBtn.addEventListener("touchstart", function (e) {
+    e.preventDefault();
+    moveNoButton();
 });
 
 yesBtn.onclick = function () {
 
     questions.classList.add("hidden");
-
     meetingSection.classList.remove("hidden");
 
 };
