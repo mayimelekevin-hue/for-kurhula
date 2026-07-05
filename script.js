@@ -140,3 +140,26 @@ nextReason.onclick = function () {
     }
 
 };
+// ==========================================
+// RUNAWAY NO BUTTON
+// ==========================================
+
+const noBtn = document.getElementById("noBtn");
+const yesBtn = document.getElementById("yesBtn");
+
+noBtn.addEventListener("mouseover", () => {
+
+    const x = Math.random() * 250 - 125;
+    const y = Math.random() * 250 - 125;
+
+    noBtn.style.transform = `translate(${x}px, ${y}px)`;
+
+});
+
+yesBtn.onclick = function () {
+
+    questions.classList.add("hidden");
+
+    meetingSection.classList.remove("hidden");
+
+};
