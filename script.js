@@ -166,9 +166,7 @@ noBtn.addEventListener("touchstart", function (e) {
 
 yesBtn.onclick = function () {
 
-    alert("YES button works!");
-
-    questions.style.display = "none";
-    meetingSection.style.display = "flex";
+    questions.classList.add("hidden");
+    meetingSection.classList.remove("hidden");
 
 };
