@@ -455,3 +455,166 @@ p{
 }
 
 }
+/* ===========================================
+   QUESTIONS
+=========================================== */
+
+.questionCard h2,
+.meetingCard h2,
+.selfieCard h2{
+
+    font-size:42px;
+    margin-bottom:25px;
+
+}
+
+.questionCard p,
+.meetingCard p,
+.selfieCard p{
+
+    font-size:22px;
+    margin-bottom:25px;
+    line-height:1.8;
+
+}
+
+/* ===========================================
+   BUTTON CONTAINER
+=========================================== */
+
+.buttonContainer{
+
+    display:flex;
+    justify-content:center;
+    gap:20px;
+    flex-wrap:wrap;
+    margin-top:30px;
+
+}
+
+/* ===========================================
+   YES BUTTON
+=========================================== */
+
+#yesBtn{
+
+    background:#4CAF50;
+    color:white;
+
+}
+
+#yesBtn:hover{
+
+    background:#43a047;
+
+}
+
+/* ===========================================
+   NO BUTTON
+=========================================== */
+
+#noBtn{
+
+    background:#f44336;
+    color:white;
+    position:relative;
+
+}
+
+#noBtn:hover{
+
+    background:#d32f2f;
+
+}
+
+/* ===========================================
+   INPUT
+=========================================== */
+
+input[type="text"],
+input[type="file"]{
+
+    width:100%;
+    max-width:500px;
+    padding:18px;
+    border:none;
+    border-radius:15px;
+    outline:none;
+    font-size:18px;
+    margin:20px auto;
+    display:block;
+
+}
+
+/* ===========================================
+   PREVIEW IMAGE
+=========================================== */
+
+#previewImage{
+
+    display:none;
+    width:220px;
+    max-width:100%;
+    margin:25px auto;
+    border-radius:20px;
+    border:4px solid white;
+    box-shadow:0 15px 30px rgba(0,0,0,.2);
+
+}
+
+/* ===========================================
+   CONTINUE BUTTONS
+=========================================== */
+
+.nextBtn,
+#meetingNext,
+#finishButton{
+
+    background:white;
+    color:#ff4d88;
+
+}
+
+.nextBtn:hover,
+#meetingNext:hover,
+#finishButton:hover{
+
+    background:#ffe8f1;
+
+}
+
+/* ===========================================
+   MOBILE
+=========================================== */
+
+@media(max-width:768px){
+
+.questionCard h2,
+.meetingCard h2,
+.selfieCard h2{
+
+    font-size:30px;
+
+}
+
+.questionCard p,
+.meetingCard p,
+.selfieCard p{
+
+    font-size:18px;
+
+}
+
+.buttonContainer{
+
+    flex-direction:column;
+
+}
+
+.buttonContainer button{
+
+    width:100%;
+
+}
+
+}
