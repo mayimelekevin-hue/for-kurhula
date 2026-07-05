@@ -77,21 +77,21 @@ musicButton.addEventListener("click", () => {
 // CONTINUE BUTTONS
 // ==========================================
 
-continue1.addEventListener("click", () => {
+continue1.onclick = function () {
 
-    hero.classList.add("hidden");
+    hero.style.display = "none";
 
-    loveLetter.classList.remove("hidden");
+    loveLetter.style.display = "flex";
 
-});
+};
 
-continue2.addEventListener("click", () => {
+continue2.onclick = function () {
 
-    loveLetter.classList.add("hidden");
+    loveLetter.style.display = "none";
 
-    tenThings.classList.remove("hidden");
+    tenThings.style.display = "flex";
 
-});
+};
 // ==========================================
 // 10 THINGS I APPRECIATE ABOUT YOU
 // ==========================================
