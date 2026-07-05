@@ -305,3 +305,153 @@ section{
     font-size:18px;
 
 }
+/* ===========================================
+   LOVE LETTER
+=========================================== */
+
+.letterContainer h2{
+    font-size:42px;
+    margin-bottom:30px;
+}
+
+.letter{
+    background:rgba(255,255,255,.12);
+    border-radius:20px;
+    padding:35px;
+    margin:30px 0;
+    text-align:left;
+    line-height:1.9;
+    font-size:18px;
+    border:1px solid rgba(255,255,255,.2);
+}
+
+.letter p{
+    margin-bottom:18px;
+}
+
+/* ===========================================
+   10 THINGS I APPRECIATE ABOUT YOU
+=========================================== */
+
+.appreciationCard h2{
+    font-size:40px;
+    margin-bottom:35px;
+}
+
+#reasonText{
+    font-size:30px;
+    font-weight:600;
+    min-height:120px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    padding:20px;
+    line-height:1.6;
+}
+
+#nextReason{
+    background:#ffffff;
+    color:#ff4d88;
+    margin-top:20px;
+}
+
+#nextReason:hover{
+    background:#ffe8f1;
+}
+
+/* ===========================================
+   ANIMATIONS
+=========================================== */
+
+@keyframes fadeUp{
+
+    from{
+
+        opacity:0;
+        transform:translateY(40px);
+
+    }
+
+    to{
+
+        opacity:1;
+        transform:translateY(0);
+
+    }
+
+}
+
+.heroCard,
+.letterContainer,
+.appreciationCard{
+
+    animation:fadeUp .8s ease;
+
+}
+
+/* ===========================================
+   HEADINGS
+=========================================== */
+
+h1,h2,h3{
+
+    text-shadow:0 5px 20px rgba(0,0,0,.18);
+
+}
+
+/* ===========================================
+   PARAGRAPHS
+=========================================== */
+
+p{
+
+    line-height:1.8;
+
+}
+
+/* ===========================================
+   MOBILE
+=========================================== */
+
+@media(max-width:768px){
+
+.heroCard,
+.letterContainer,
+.appreciationCard{
+
+    padding:28px;
+
+}
+
+.heroCard h1{
+
+    font-size:52px;
+
+}
+
+.heroCard h2{
+
+    font-size:30px;
+
+}
+
+.letterContainer h2{
+
+    font-size:32px;
+
+}
+
+.appreciationCard h2{
+
+    font-size:30px;
+
+}
+
+#reasonText{
+
+    font-size:23px;
+
+}
+
+}
