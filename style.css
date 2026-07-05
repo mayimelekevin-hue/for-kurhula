@@ -618,3 +618,130 @@ input[type="file"]{
 }
 
 }
+/* ===========================================
+   FINAL SECTION
+=========================================== */
+
+.finalCard h1,
+.endingCard h1{
+
+    font-family:'Great Vibes',cursive;
+    font-size:70px;
+    margin-bottom:20px;
+
+}
+
+.finalCard p,
+.endingCard p{
+
+    font-size:22px;
+    line-height:1.8;
+    margin-bottom:20px;
+
+}
+
+.endingCard h2{
+
+    font-size:34px;
+    margin:25px 0;
+
+}
+
+/* ===========================================
+   FINAL BUTTON
+=========================================== */
+
+#showFinalMessage{
+
+    background:white;
+    color:#ff4d88;
+    margin-top:30px;
+
+}
+
+#showFinalMessage:hover{
+
+    background:#ffe8f1;
+
+}
+
+/* ===========================================
+   GLOW EFFECT
+=========================================== */
+
+@keyframes glow{
+
+    0%{
+        text-shadow:0 0 10px rgba(255,255,255,.3);
+    }
+
+    50%{
+        text-shadow:
+        0 0 20px rgba(255,255,255,.8),
+        0 0 35px rgba(255,120,180,.8);
+    }
+
+    100%{
+        text-shadow:0 0 10px rgba(255,255,255,.3);
+    }
+
+}
+
+.finalCard h1,
+.loadingCard h1{
+
+    animation:glow 2.5s infinite;
+
+}
+
+/* ===========================================
+   FADE IN
+=========================================== */
+
+.fadeIn{
+
+    animation:fadeUp .8s ease forwards;
+
+}
+
+/* ===========================================
+   MOBILE IMPROVEMENTS
+=========================================== */
+
+@media(max-width:768px){
+
+.finalCard h1,
+.endingCard h1{
+
+    font-size:48px;
+
+}
+
+.endingCard h2{
+
+    font-size:28px;
+
+}
+
+.finalCard p,
+.endingCard p{
+
+    font-size:18px;
+
+}
+
+button{
+
+    width:100%;
+
+}
+
+#musicButton{
+
+    width:55px;
+    height:55px;
+    font-size:22px;
+
+}
+
+}
