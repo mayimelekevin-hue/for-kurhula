@@ -126,22 +126,17 @@ const reasonText = document.getElementById("reasonText");
 
 const nextReason = document.getElementById("nextReason");
 
-nextReason.addEventListener("click", () => {
+nextReason.onclick = function () {
+
+    alert("Button clicked!");
 
     reasonIndex++;
 
-    if(reasonIndex < reasons.length){
-
+    if (reasonIndex < reasons.length) {
         reasonText.textContent = reasons[reasonIndex];
-
-    }
-
-    else{
-
+    } else {
         tenThings.classList.add("hidden");
-
         questions.classList.remove("hidden");
-
     }
 
-});
+};
