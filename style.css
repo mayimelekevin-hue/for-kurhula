@@ -1,0 +1,307 @@
+/* ===========================================
+   RESET
+=========================================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+
+    font-family:'Poppins',sans-serif;
+
+    background:linear-gradient(
+    135deg,
+    #ff9ecf,
+    #ffd8f0,
+    #fff5fb);
+
+    min-height:100vh;
+
+    overflow-x:hidden;
+
+    color:#ffffff;
+
+}
+
+/* ===========================================
+   FLOATING HEARTS BACKGROUND
+=========================================== */
+
+#hearts{
+
+    position:fixed;
+
+    inset:0;
+
+    pointer-events:none;
+
+    z-index:-1;
+
+}
+
+/* ===========================================
+   LOADING SCREEN
+=========================================== */
+
+#loadingScreen{
+
+    position:fixed;
+
+    inset:0;
+
+    background:linear-gradient(
+    135deg,
+    #ff4d88,
+    #ff8fb1);
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    z-index:9999;
+
+    transition:1s;
+
+}
+
+.loadingCard{
+
+    width:90%;
+
+    max-width:420px;
+
+    padding:40px;
+
+    border-radius:30px;
+
+    text-align:center;
+
+    backdrop-filter:blur(20px);
+
+    background:rgba(255,255,255,.15);
+
+    border:1px solid rgba(255,255,255,.25);
+
+    box-shadow:0 15px 40px rgba(0,0,0,.2);
+
+}
+
+.loadingCard h1{
+
+    font-family:'Great Vibes',cursive;
+
+    font-size:64px;
+
+    margin:15px 0;
+
+}
+
+.smallText{
+
+    font-size:18px;
+
+    letter-spacing:2px;
+
+}
+
+.fromText{
+
+    margin-bottom:30px;
+
+    opacity:.9;
+
+}
+
+/* ===========================================
+   BUTTONS
+=========================================== */
+
+button{
+
+    border:none;
+
+    cursor:pointer;
+
+    border-radius:50px;
+
+    padding:15px 35px;
+
+    font-size:17px;
+
+    font-weight:600;
+
+    transition:.35s;
+
+}
+
+button:hover{
+
+    transform:translateY(-4px);
+
+}
+
+#openHeart{
+
+    background:white;
+
+    color:#ff3f80;
+
+}
+
+#openHeart:hover{
+
+    background:#ffe6f0;
+
+}
+
+/* ===========================================
+   MUSIC BUTTON
+=========================================== */
+
+#musicButton{
+
+    position:fixed;
+
+    top:20px;
+
+    right:20px;
+
+    width:60px;
+
+    height:60px;
+
+    border-radius:50%;
+
+    font-size:24px;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    background:white;
+
+    color:#ff3f80;
+
+    z-index:1000;
+
+}
+
+/* ===========================================
+   MAIN WEBSITE
+=========================================== */
+
+#website{
+
+    display:none;
+
+    width:100%;
+
+}
+
+/* ===========================================
+   SECTIONS
+=========================================== */
+
+section{
+
+    min-height:100vh;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    padding:40px 20px;
+
+}
+
+.hidden{
+
+    display:none;
+
+}
+
+/* ===========================================
+   GLASS CARDS
+=========================================== */
+
+.heroCard,
+.letterContainer,
+.appreciationCard,
+.questionCard,
+.meetingCard,
+.selfieCard,
+.finalCard,
+.endingCard{
+
+    width:95%;
+
+    max-width:850px;
+
+    padding:45px;
+
+    text-align:center;
+
+    border-radius:30px;
+
+    background:rgba(255,255,255,.18);
+
+    backdrop-filter:blur(20px);
+
+    border:1px solid rgba(255,255,255,.25);
+
+    box-shadow:0 20px 45px rgba(0,0,0,.15);
+
+}
+
+/* ===========================================
+   HERO
+=========================================== */
+
+.heroCard h1{
+
+    font-family:'Great Vibes',cursive;
+
+    font-size:72px;
+
+    margin-bottom:20px;
+
+}
+
+.heroCard h2{
+
+    font-size:40px;
+
+    margin-bottom:20px;
+
+}
+
+.heroMessage{
+
+    line-height:1.8;
+
+    font-size:20px;
+
+    margin:30px 0;
+
+}
+
+.heroSmall{
+
+    letter-spacing:2px;
+
+    font-size:18px;
+
+}
