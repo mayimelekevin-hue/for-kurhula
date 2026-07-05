@@ -128,8 +128,6 @@ const nextReason = document.getElementById("nextReason");
 
 nextReason.onclick = function () {
 
-    alert("Button clicked!");
-
     reasonIndex++;
 
     if (reasonIndex < reasons.length) {
