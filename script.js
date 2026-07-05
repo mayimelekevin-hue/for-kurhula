@@ -92,3 +92,56 @@ continue2.addEventListener("click", () => {
     tenThings.classList.remove("hidden");
 
 });
+// ==========================================
+// 10 THINGS I APPRECIATE ABOUT YOU
+// ==========================================
+
+const reasons = [
+
+"1. Your beautiful smile 😊",
+
+"2. Your kindness ❤️",
+
+"3. The way you make me laugh 😂",
+
+"4. Your caring heart 💖",
+
+"5. Your honesty 🌸",
+
+"6. Your strength 💪",
+
+"7. Your beautiful personality ✨",
+
+"8. The peace you bring 🕊️",
+
+"9. The happiness you spread ☀️",
+
+"10. Simply because you're Kurhula ❤️"
+
+];
+
+let reasonIndex = 0;
+
+const reasonText = document.getElementById("reasonText");
+
+const nextReason = document.getElementById("nextReason");
+
+nextReason.addEventListener("click", () => {
+
+    reasonIndex++;
+
+    if(reasonIndex < reasons.length){
+
+        reasonText.textContent = reasons[reasonIndex];
+
+    }
+
+    else{
+
+        tenThings.classList.add("hidden");
+
+        questions.classList.remove("hidden");
+
+    }
+
+});
