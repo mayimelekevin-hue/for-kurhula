@@ -246,12 +246,22 @@ finalSection.scrollIntoView({
 showFinalMessage.onclick = function () {
 
     finalSection.style.display = "none";
-endingSection.style.display = "flex";
 
-endingSection.scrollIntoView({
-    behavior: "smooth",
-    block: "center"
-});
+    endingSection.style.display = "flex";
 
+    endingSection.scrollIntoView({
+        behavior: "smooth",
+        block: "center"
+    });
+
+    confetti({
+
+        particleCount: 180,
+
+        spread: 100,
+
+        origin: { y: 0.6 }
+
+    });
 
 };
