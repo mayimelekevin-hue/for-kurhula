@@ -168,3 +168,23 @@ yesBtn.onclick = function () {
     meetingSection.style.display = "flex";
 
 };
+// ==========================================
+// MEETING DATE
+// ==========================================
+
+meetingNext.onclick = function () {
+
+    const date = document.getElementById("meetingDate").value.trim();
+
+    if (date === "") {
+
+        alert("Please tell me when we're meeting. 🥺");
+        return;
+
+    }
+
+    meetingSection.style.display = "none";
+
+    selfieSection.style.display = "flex";
+
+};
