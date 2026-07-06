@@ -174,6 +174,8 @@ yesBtn.onclick = function () {
 
 meetingNext.onclick = function () {
 
+    alert("Meeting button clicked!");
+
     const date = document.getElementById("meetingDate").value.trim();
 
     if (date === "") {
@@ -186,6 +188,8 @@ meetingNext.onclick = function () {
     meetingSection.style.display = "none";
 
     selfieSection.style.display = "flex";
+
+    alert("Selfie section should now be visible.");
 
 };
 // ==========================================
