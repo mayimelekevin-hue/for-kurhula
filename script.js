@@ -265,3 +265,34 @@ showFinalMessage.onclick = function () {
     });
 
 };
+// ==========================================
+// FLOATING HEARTS
+// ==========================================
+
+const hearts = document.getElementById("hearts");
+
+function createHeart() {
+
+    const heart = document.createElement("div");
+
+    heart.className = "heart";
+
+    heart.innerHTML = "❤️";
+
+    heart.style.left = Math.random() * 100 + "%";
+
+    heart.style.fontSize = (18 + Math.random() * 18) + "px";
+
+    heart.style.animationDuration = (5 + Math.random() * 5) + "s";
+
+    hearts.appendChild(heart);
+
+    setTimeout(() => {
+
+        heart.remove();
+
+    }, 10000);
+
+}
+
+setInterval(createHeart, 700);
