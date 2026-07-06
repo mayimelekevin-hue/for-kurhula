@@ -188,8 +188,6 @@ meetingSection.scrollIntoView({
 
 meetingNext.onclick = function () {
 
-    alert("Meeting button clicked!");
-
     const date = document.getElementById("meetingDate").value.trim();
 
     if (date === "") {
