@@ -188,3 +188,43 @@ meetingNext.onclick = function () {
     selfieSection.style.display = "flex";
 
 };
+// ==========================================
+// SELFIE PREVIEW
+// ==========================================
+
+const selfieInput = document.getElementById("selfieInput");
+const previewImage = document.getElementById("previewImage");
+
+selfieInput.onchange = function (event) {
+
+    const file = event.target.files[0];
+
+    if (!file) return;
+
+    previewImage.src = URL.createObjectURL(file);
+
+    previewImage.style.display = "block";
+
+};
+// ==========================================
+// FINISH
+// ==========================================
+
+finishButton.onclick = function () {
+
+    selfieSection.style.display = "none";
+
+    finalSection.style.display = "flex";
+
+};
+// ==========================================
+// FINAL MESSAGE
+// ==========================================
+
+showFinalMessage.onclick = function () {
+
+    finalSection.style.display = "none";
+
+    endingSection.style.display = "flex";
+
+};
