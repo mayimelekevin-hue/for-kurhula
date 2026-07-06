@@ -131,10 +131,19 @@ nextReason.onclick = function () {
     reasonIndex++;
 
     if (reasonIndex < reasons.length) {
+
         reasonText.textContent = reasons[reasonIndex];
+
     } else {
-        tenThings.classList.add("hidden");
-        questions.classList.remove("hidden");
+
+        tenThings.style.display = "none";
+        questions.style.display = "flex";
+
+        questions.scrollIntoView({
+            behavior: "smooth",
+            block: "center"
+        });
+
     }
 
 };
@@ -165,7 +174,12 @@ noBtn.addEventListener("touchstart", function (e) {
 yesBtn.onclick = function () {
 
     questions.style.display = "none";
-    meetingSection.style.display = "flex";
+meetingSection.style.display = "flex";
+
+meetingSection.scrollIntoView({
+    behavior: "smooth",
+    block: "center"
+});
 
 };
 // ==========================================
@@ -186,10 +200,12 @@ meetingNext.onclick = function () {
     }
 
     meetingSection.style.display = "none";
+selfieSection.style.display = "flex";
 
-    selfieSection.style.display = "flex";
-
-    alert("Selfie section should now be visible.");
+selfieSection.scrollIntoView({
+    behavior: "smooth",
+    block: "center"
+});
 
 };
 // ==========================================
@@ -217,8 +233,12 @@ selfieInput.onchange = function (event) {
 finishButton.onclick = function () {
 
     selfieSection.style.display = "none";
+finalSection.style.display = "flex";
 
-    finalSection.style.display = "flex";
+finalSection.scrollIntoView({
+    behavior: "smooth",
+    block: "center"
+});
 
 };
 // ==========================================
@@ -228,7 +248,12 @@ finishButton.onclick = function () {
 showFinalMessage.onclick = function () {
 
     finalSection.style.display = "none";
+endingSection.style.display = "flex";
 
-    endingSection.style.display = "flex";
+endingSection.scrollIntoView({
+    behavior: "smooth",
+    block: "center"
+});
+
 
 };
