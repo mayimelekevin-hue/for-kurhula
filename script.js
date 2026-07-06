@@ -186,24 +186,45 @@ meetingSection.scrollIntoView({
 // MEETING DATE
 // ==========================================
 
-meetingNext.onclick = function () {
+meetingNext.onclick = async function (e) {
+
+    e.preventDefault();
 
     const date = document.getElementById("meetingDate").value.trim();
 
-    if (date === "") {
+    if (date === "") return;
 
-        alert("Please tell me when we're meeting. 🥺");
-        return;
+    await fetch("https://formspree.io/f/xnjkwegn", {
 
-    }
+        method: "POST",
+
+        headers: {
+
+            "Content-Type": "application/json",
+
+            "Accept": "application/json"
+
+        },
+
+        body: JSON.stringify({
+
+            meeting_date: date,
+
+            message: "Response from the For Kurhula ❤️ website."
+
+        })
+
+    });
 
     meetingSection.style.display = "none";
-selfieSection.style.display = "flex";
+    selfieSection.style.display = "flex";
 
-selfieSection.scrollIntoView({
-    behavior: "smooth",
-    block: "center"
-});
+    selfieSection.scrollIntoView({
+
+        behavior: "smooth",
+        block: "center"
+
+    });
 
 };
 // ==========================================
@@ -230,13 +251,30 @@ selfieInput.onchange = function (event) {
 
 finishButton.onclick = function () {
 
-    selfieSection.style.display = "none";
-finalSection.style.display = "flex";
+    const phone = "27605399052";
 
-finalSection.scrollIntoView({
-    behavior: "smooth",
-    block: "center"
-});
+    const message =
+`Hi Kevin ❤️
+
+I've just finished your website.
+
+Here's my selfie as you requested 😊❤️`;
+
+    window.open(
+        `https://wa.me/${phone}?text=${encodeURIComponent(message)}`,
+        "_blank"
+    );
+
+    selfieSection.style.display = "none";
+
+    finalSection.style.display = "flex";
+
+    finalSection.scrollIntoView({
+
+        behavior: "smooth",
+        block: "center"
+
+    });
 
 };
 // ==========================================
